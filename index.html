@@ -18,8 +18,8 @@
     <script src="Code/code.js"></script>
 </head>
 
-<body>
-    <div class="container-fluid">
+<body id="all">
+    <div class="container-fluid" id="pagina">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -29,26 +29,28 @@
                     <ul class="navbar-nav offset-2 me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
-                                <h2>Sorteio do Final de ano</h2>
+                                <h2>Sorteio de final de ano</h2>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <div id="tituloPesquisaDiv" class="row col-12">
+            <h3 id="tituloPesquisa">Preencha com os seus dados para participar do sorteio:</h3>
+        </div>
         <div class="row offset-3 col-6">
-            <h3 id="tituloPesquisa">Preencha com os seus dados para participar da pesquisa:</h3>
-            <input id="nome" placeholder="Digite seu nome completo:" type="text">
-            <input id="email" placeholder="Digite seu e-mail empresarial:" type="email">
+            <input id="nome" class="inputText" placeholder="Digite seu nome completo:" type="text">
+            <input id="email" class="inputText" placeholder="Digite seu e-mail empresarial:" type="email">
             <h5>Selecione seu setor:</h5>
-            <select id="empresa" onchange="selecionaEmpresa()">
+            <select id="empresa" class="selects" onchange="selecionaEmpresa()">
                 <option value="null">Selecione:</option>
                 <option value="unimed">Unimed</option>
                 <option value="imune">Imune</option>
             </select>
-            <option value="null">Seu setor:</option>
-            <select id="setorUsm" disabled hidden>
-                <option value="Administrativo">Administrativo</option>
+            <h5>Seu setor:</h5>
+            <select id="setorUsm" class="selects" disabled hidden>
+                <option class="selects" value="Administrativo">Administrativo</option>
                 <option value="Atenção Integral à Saúde">Atenção Integral à Saúde</option>
                 <option value="Auditoria em Saúde">Auditoria em Saúde</option>
                 <option value="Auditoria Médica">Auditoria Médica</option>
@@ -74,7 +76,7 @@
                 <option value="Superintendência">Superintendência</option>
                 <option value="Tecnologia da Informação">Tecnologia da Informação</option>
             </select>
-            <select id="setorImu" disabled hidden>
+            <select id="setorImu" class="selects" disabled hidden>
                 <option value="Administrativo">Administrativo</option>
                 <option value="Área Técnica">Área Técnica</option>
                 <option value="Coleta">Coleta</option>

@@ -1,9 +1,44 @@
+#all{
+    padding-bottom: 250px;
+    background-color: rgb(205,227,187);
+}
+
+#pagina{
+    background-color: rgb(205,227,187);
+    text-align: center;
+}
+
 #logo_Unimed {
     margin-left: 90px;
     height: 40px;
     width: 190px;
 }
 
-#tituloPesquisa{
+#tituloPesquisaDiv {
+    height: 300px;
+    width: 100%;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("Images/subTitulo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 210px;
+}
+
+#tituloPesquisa {
+    color: white;
+    text-align: left;
+    padding-top: 60px;
+}
+
+.inputText{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.selects{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: auto;
+    width: 40px;
 }
