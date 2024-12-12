@@ -67,8 +67,6 @@ function enviar() {
     document.getElementById("setorImu").disabled = true;
     document.getElementById("setorImu").hidden = true;
 
-
-    alert("Nome: " + nome + "|Email: " + emailReceb + "|Empresa: " + empresa + "|Setor: " + setorEmpresa);
     Email.send({
         SecureToken: "439b4b05-f6c0-45f4-83c7-43e5188179b6",
         To: 'cyberusmtst@gmail.com',
